@@ -1,24 +1,23 @@
-// Prof Neri Aldoir Neitzke   ULBRA
-// www.INFORMATICON.com.br - videoaulasneri@gmail.com
-/*Problema: Crie um algoritmo que leia trÍs valores le,ld,li e verifique se eles podem ser os comprimentos dos
-lados de um tri‚ngulo, e se forem, verificar se È um tri‚ngulo equil·tero, isÛsceles ou escaleno. Se eles n„o
-formarem um tri‚ngulo, escrever a mensagem "N„o È um tri‚ngulo".
-Antes da elaboraÁ„o do algoritmo, torna-se necess·ria a revis„o de algumas propriedades e definiÁıes.
-Propriedade - O comprimento de cada lado de um tri‚ngulo È menor do que a soma dos comprimentos dos outros dois
-lados, fora desta condiÁ„o as medidas n„o s„o consideradas de um tri‚ngulo.
-DefiniÁ„o 1 - Chama-se tri‚ngulo equil·tero os que tem os comprimentos dos trÍs lados iguais,
-DefiniÁ„o 2 - Chama-se tri‚ngulo isÛsceles ao tri‚ngulo que tem os comprimentos de dois lados guais.
-DefiniÁ„o 3 - Chama-se tri‚ngulo escaleno ao tri‚ngulo que tem os comprimentos dos trÍs lados diferentes. */
-#include <conio.h>
+
+/*Problema: Crie um algoritmo que leia tr√™s valores le,ld,li e verifique se eles podem ser os comprimentos dos
+lados de um tri√¢ngulo, e se forem, verificar se √© um tri√¢ngulo equil√°tero, is√≥sceles ou escaleno. Se eles n√£o
+formarem um tri√¢ngulo, escrever a mensagem "N√£o √© um tri√¢ngulo".
+Antes da elabora√ß√£o do algoritmo, torna-se necess√°ria a revis√£o de algumas propriedades e defini√ß√µes.
+Propriedade - O comprimento de cada lado de um tri√¢ngulo √© menor do que a soma dos comprimentos dos outros dois
+lados, fora desta condi√ß√£o as medidas n√£o s√£o consideradas de um tri√¢ngulo.
+Defini√ß√£o 1 - Chama-se tri√¢ngulo equil√°tero os que tem os comprimentos dos tr√™s lados iguais,
+Defini√ß√£o 2 - Chama-se tri√¢ngulo is√≥sceles ao tri√¢ngulo que tem os comprimentos de dois lados guais.
+Defini√ß√£o 3 - Chama-se tri√¢ngulo escaleno ao tri√¢ngulo que tem os comprimentos dos tr√™s lados diferentes. */
+
 #include <stdio.h>
-main()
+int main()
 {
    float le, ld, li;
-   printf("Digite o valor LE.: ");
+   printf("Digite o valor LE: ");
    scanf("%f",&le);
-   printf("Digite o valor LD.: ");
+   printf("Digite o valor LD: ");
    scanf("%f",&ld);
-   printf("Digite o valor LI.: ");
+   printf("Digite o valor LI: ");
    scanf("%f",&li);
    if ((li < (le + ld)) && (le < (ld + li)) && (ld < (li + le)))
            if ((le == ld) && (le == li))
@@ -28,8 +27,8 @@ main()
            else   // if ((ld != le) && (ld != li) && (li != le))  
                   printf("triangulo  escaleno");
    else
-          printf("nao e um triangulo");
-   printf("\n\n\\n.................FIM.................."); 
-   getch();   // esperar uma tecla 
+          printf("Nao e um triangulo");
+   printf("\n"); 
+   return 0;
 }
 
