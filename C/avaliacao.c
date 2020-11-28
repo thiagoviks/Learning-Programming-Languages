@@ -1,11 +1,11 @@
-/* Problema: O sistema de avaliação de determinada disciplina,
-é composto por três provas. A primeira prova tem peso 2,  a
-Segunda tem peso 3 e a terceira prova tem peso 5. Faça um algoritmo para
-calcular a média final de um aluno desta disciplina.
+/* Problema: O sistema de avaliaÃ§Ã£o de determinada disciplina,
+Ã© composto por trÃªs provas. A primeira prova tem peso 2,  a
+Segunda tem peso 3 e a terceira prova tem peso 5. FaÃ§a um algoritmo para
+calcular a mÃ©dia final de um aluno desta disciplina.
 */
 
 #include <stdio.h>
-main()
+int main()
 {
    float prova1, prova2, prova3, media;
    printf("Digite a nota da prova 1: ");
@@ -20,6 +20,6 @@ main()
     prova3 = prova3 * 5 /10;
     media  = (prova1 + prova2 + prova3);
     
-   printf("\n A media final foi: %f\n",media);         
-
+   printf("A media final foi: %f\n",media);         
+return 0;
 }
