@@ -1,5 +1,5 @@
 # Learning-Programming-Languages
-Learning the semantics of multiple the programming languages and logic exercises and implementing in Python3, C, C++, Java, Javascript, more some languages will be add on future.
+Learning the semantics of multiple the programming languages and logic exercises and implementing in Python3, C, Java more languages will be add on future.
 Some exercises are from my Information System course college.
 
 # OS and Tools<br>
@@ -14,3 +14,10 @@ How to compile: <br>
 gcc -g file_name.c -o file_name<br>
 How to run<br>
 ./file_name
+
+# Java<br>
+Compiled the files .java using openjdk 11.0.11 <br>
+How to compile: <br>
+javac file_name.java<br>
+How to run<br>
+java file_name
